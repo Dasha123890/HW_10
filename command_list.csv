@@ -1,0 +1,27 @@
+    1  mkdir ~/HW_10
+    2  cd ~/HW_10
+    3  git config --global user.name Daria K
+    4  git config --global user.email darkot583@gmail.com
+    5  git clone https://github.com/Dasha123890/HW_10.git
+    6  rm -rf HW_10\n
+    7  git clone https://github.com/Dasha123890/HW_10.git\n
+    8  cd HW_10
+    9  touch text_ignore.txt
+   10  nano .gitignore
+   11  git  status
+   12  git add .
+   13  git commit -m "Added text_ignore.txt to .gitignore"\n
+   14  touch main_test.txt
+   15  git add .
+   16  git commit -m "Created empty file main_test.txt"\n
+   17  git checkout -b develop\n
+   18  touch develop_test.txt\n
+   19  git add .
+   20  git commit -m "Created develop_test.txt in develop branch"\n
+   21  nano develop_test.txt
+   22  git status
+   23  git add .
+   24  git commit -m "Made a small change to develop_test.txt"\n
+   25  git checkout main
+   26  git merge develop
+   27  git log
